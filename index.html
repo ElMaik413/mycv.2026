@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Miguel Sánchez Jaén - Software Engineering Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;450;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            font-family: 'Fira Code', monospace;
+            font-size: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-align: right;
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Fira Code', monospace;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p, li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        .item {
+            margin-bottom: 1.25rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-title {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .item-date {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+            header, .contact-info {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Encabezado / Datos Personales -->
+        <header>
+            <div>
+                <h1>Juan Miguel Sánchez Jaén</h1>
+                <div class="subtitle">&lt; Software Engineering Student /&gt;</div>
+            </div>
+            <div class="contact-info">
+                <p>Orizaba, Veracruz, México</p>
+                <p>GitHub: <a href="https://github.com/ElMaik413" target="_blank">github.com/ElMaik413</a></p>
+                <p>Email: <a href="mailto:tu-correo@example.com">tu-correo@example.com</a></p>
+            </div>
+        </header>
+
+        <!-- Perfil / Resumen -->
+        <section>
+            <h2>// Perfil Profesional</h2>
+            <p>Estudiante de primer semestre de Ingeniería de Software en la Universidad Veracruzana. Apasionado por el desarrollo de software, la lógica de programación y la creación de experiencias interactivas y videojuegos. Con enfoque autodidacta y constantes proyectos prácticos utilizando Java, C# y tecnologías web.</p>
+        </section>
+
+        <!-- Educación -->
+        <section>
+            <h2>// Educación</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Ingeniería de Software</span>
+                    <span class="item-date">2026 - Presente</span>
+                </div>
+                <p>Universidad Veracruzana</p>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section>
+            <h2>// Proyectos Destacados</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Desarrollo de Videojuego 2D (Unity)</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <p>Creación de un juego indie en pixel-art utilizando Unity y scripts personalizados en C# para mecánicas de movimiento, interacción de rejillas y animación de sprites.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Se pasó el The Farmer Was Replaced</span>
+                    <span class="item-date">2025 - 2026</span>
+                </div>
+                <p>Diseño de algoritmos de automatización y scripts en Python enfocados en la coordinación de recursos, gestión de cuadrículas y exploración lógica.</p>
+            </div>
+        </section>
+
+        <!-- Habilidades Tecnológicas -->
+        <section>
+            <h2>// Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">VS Code</span>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
